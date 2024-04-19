@@ -1,0 +1,35 @@
+/** Calling utilities **/
+/** Calling Base **/
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), url("./../../assets/fonts/NHaasGroteskDSPro-55Rg.woff2") format("woff2"), url("./../../assets/fonts/NHaasGroteskDSPro-55Rg.woff") format("woff"), url("./../../assets/fonts/NHaasGroteskDSPro-55Rg.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  font-style: medium;
+  font-weight: 600;
+  src: local("Open Sans"), url("./../../assets/fonts/NHaasGroteskDSPro-65Md.woff2") format("woff2"), url("./../../assets/fonts/NHaasGroteskDSPro-65Md.woff") format("woff"), url("./../../assets/fonts/NHaasGroteskDSPro-65Md.ttf") format("truetype"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Neue Haas Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+h1 {
+  font-weight: normal; }
+
+::selection {
+  background-color: #1D79FF; }
+
+/** Calling Components **/
+/** Calling Layout **/
