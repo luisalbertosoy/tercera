@@ -22,21 +22,13 @@
                 font-size: 1rem;
                 line-height: 1.5rem;
                 text-decoration: none;
+                transition: 0.3s;
+                &:hover {
+                    color: #1D79FF;
+                }
             }
         }
     }
-}
-
-.sub-container ul li a {
-    color: #000;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.sub-container ul li a:hover {
-    color: #1D79FF;
 }
 
 .submenu-active {

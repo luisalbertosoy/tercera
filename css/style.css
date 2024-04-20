@@ -63,8 +63,7 @@ body {
   font-weight: 400;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  transition: 0.3s; }
+  -webkit-text-size-adjust: 100%; }
 
 h1 {
   font-weight: normal; }
@@ -115,6 +114,70 @@ h1 {
   color: #A1A1A1; }
 
 /** Calling Components **/
+.sub-container {
+  width: auto;
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translate(-50%, 0px);
+  z-index: 100; }
+  .sub-container ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 16px 24px;
+    border-radius: 16px;
+    background: rgba(195, 210, 232, 0.6);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.03), 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(0.625rem);
+    background-blend-mode: overlay; }
+    .sub-container ul li {
+      display: flex;
+      flex-direction: row;
+      justify-content: none;
+      align-items: center;
+      gap: 0.25rem;
+      list-style: none; }
+      .sub-container ul li a {
+        color: #000;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-decoration: none;
+        transition: 0.3s; }
+        .sub-container ul li a:hover {
+          color: #1D79FF; }
+
+.submenu-active {
+  width: 10px;
+  height: 10px;
+  background-color: #1D79FF;
+  border-radius: 10px; }
+
+.menu-bg {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 64px;
+  background-color: #ffffff5d;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  z-index: 2; }
+  .menu-bg a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: black;
+    border-bottom: 2px solid transparent; }
+
 /** Calling Layout **/
 .header-index {
   display: flex;
@@ -128,40 +191,41 @@ h1 {
   top: 0;
   right: 0;
   z-index: 150; }
-  .header-index .nav-container {
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 0px 16px; }
+  .nav-container a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: black;
+    border-bottom: 2px solid transparent; }
+  .nav-container .menu-toggle {
+    display: none; }
+  .nav-container .menu-button {
+    display: none; }
+  .nav-container .push-right {
+    margin-left: auto; }
+  .nav-container .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    width: 100%;
-    padding: 0px 16px; }
-    .header-index .nav-container a {
-      text-decoration: none;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      color: black;
-      border-bottom: 2px solid transparent; }
-    .header-index .nav-container .menu-toggle {
-      display: none; }
-    .header-index .nav-container .menu-button {
-      display: none; }
-    .header-index .nav-container .push-right {
-      margin-left: auto; }
-    .header-index .nav-container .navbar {
-      display: flex;
-      flex-direction: row;
-      justify-content: none;
-      align-items: none;
-      gap: 1rem;
-      list-style: none; }
-      .header-index .nav-container .navbar li {
-        border-bottom: 2px solid transparent;
-        /**transition: 0.3s;**/ }
-        .header-index .nav-container .navbar li:hover {
-          border-bottom: 2px solid #000000; }
-        .header-index .nav-container .navbar li a {
-          text-decoration: none;
-          font-size: 1rem;
-          line-height: 1.5rem;
-          color: black; }
+    justify-content: none;
+    align-items: none;
+    gap: 1rem;
+    list-style: none; }
+    .nav-container .navbar li {
+      border-bottom: 2px solid transparent;
+      transition: 0.3s; }
+      .nav-container .navbar li:hover {
+        border-bottom: 2px solid #000000; }
+      .nav-container .navbar li a {
+        text-decoration: none;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: black; }

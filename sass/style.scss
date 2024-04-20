@@ -12,8 +12,9 @@
 
 /** Calling Components **/
 
-
+@import "./components/subnav";
+@import "./components/menu-blured";
 
 /** Calling Layout **/
 
-@import "./layout/header"
+@import "./layout/header";
