@@ -1,5 +1,5 @@
 .header-index {
-    @include flex (row, none, center, none);
+    @include flex (row, none, center, none, none);
     width: 50%;
     height: 4rem;
     position: fixed;
@@ -9,7 +9,7 @@
 }
 
 .nav-container {
-    @include flex (row, space-between, center, 2rem);
+    @include flex (row, space-between, center, 2rem, none);
     width: 100%;
     padding: 0px 16px;
     a {
@@ -29,7 +29,7 @@
         margin-left: auto;
     }
     .navbar {
-        @include flex (row, none, none, 1rem);
+        @include flex (row, none, none, 1rem, none);
         list-style: none;
         li {
             border-bottom: 2px solid transparent;

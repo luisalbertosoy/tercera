@@ -1,5 +1,6 @@
 /** Calling utilities **/
 
+@import "./utilities/variables";
 @import "./utilities/maps";
 @import "./utilities/mixins";
 
@@ -14,7 +15,16 @@
 
 @import "./components/subnav";
 @import "./components/menu-blured";
+@import "./components/main-container";
+@import "./components/aphn-icon";
+@import "./components/cards-cont";
+@import "./components/cards";
 
 /** Calling Layout **/
 
 @import "./layout/header";
+@import "./layout/footer";
+@import "./layout/herospace-index";
+@import "./layout/trend-products";
+@import "./layout/archive-index";
+@import "./layout/tops";

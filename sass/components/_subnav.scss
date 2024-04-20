@@ -7,7 +7,7 @@
     z-index: 100;
     ul {
         width: auto;
-        @include flex (row, space-between, center, 2rem);
+        @include flex (row, space-between, center, 2rem, none);
         padding: 16px 24px;
         border-radius: 16px;
         background: rgba(195, 210, 232, 0.60);
@@ -15,7 +15,7 @@
         backdrop-filter: blur(0.625rem);
         background-blend-mode: overlay;
         li {
-            @include flex (row, none, center, .25rem);
+            @include flex (row, none, center, .25rem, none);
             list-style: none;
             a {
                 color: #000;

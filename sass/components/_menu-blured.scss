@@ -1,5 +1,5 @@
 .menu-bg {
-    @include flex (row, none, center, none);
+    @include flex (row, none, center, none, none);
     display:flex;
     flex-direction: row;
     width: 100%;

@@ -1,0 +1,71 @@
+.archive-container {
+    @include grid (repeat(12, 1fr), repeat(12, 1fr), 1rem);
+    width: 100%;
+    height: 1328px;
+    background-color: #ECE870;
+    padding: 0px 16px;
+    grid-template-areas:
+        "title title title title title title title title . brand brand brand"
+        "title title title title title title title title . brand brand brand"
+        ". . . . . . . . . . . ."
+        ". . season season . . version version version version . ."
+        "subtitle subtitle . . tagline tagline collection collection collection collection . ."
+        "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+        "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+        "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+        "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
+        "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
+        "subtitle subtitle cta cta cta cta thumb thumb thumb thumb . ."
+        "subtitle subtitle . . . . . . . . . ."
+    ;
+}
+
+.title-archive {
+    grid-area: title;
+    @include flex (row, none, flex-end, none, none);
+}
+.brand-archive {
+    grid-area: brand;
+    @include flex (row, flex-end, flex-end, none, none);
+}
+.season-archive {
+    grid-area: season;
+}
+.version-archive {
+    grid-area: version;
+    line-height: 4.5rem;
+}
+.subtitle-archive {
+    @include flex (row, none, none, none, none);
+    grid-area: subtitle;
+    line-height: 4.5rem;
+    /** Rotation **/
+    writing-mode: vertical-lr;
+}
+.tagline-archive {
+    grid-area: tagline;
+}
+.collection-archive {
+    grid-area: collection;
+}
+.archive-container img {
+    @include flex (row, center, center, none, none);
+    grid-area: thumb;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: $img-rounded;
+}
+.text-archive {
+    @include flex (row, none, flex-end, none, none);
+    grid-area: btxt;
+}
+.cta-archive {
+    @include flex (row, none, flex-end, none, none);
+    grid-area: cta;
+    a {
+        display: inline-block;
+        color: #000000;
+        text-decoration: none;
+    }
+}

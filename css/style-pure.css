@@ -402,13 +402,13 @@ h1 {
     gap: 16px;
 }
 
-.trend-card {
+.card {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.trend-card img {
+.card img {
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -417,7 +417,7 @@ h1 {
     transition: 0.3s;
 }
 
-.trend-card img:hover {
+.card img:hover {
     border: 1px solid #ECE870;
     outline: 4px solid #ECE870;
 }

@@ -1,0 +1,6 @@
+.cards-cont {
+    @include flex (row, none, none, 1rem, wrap);
+    width: 100%;
+    padding: 0 16px;
+    row-gap: 48px;
+}

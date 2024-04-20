@@ -1,0 +1,15 @@
+.herospace-index {
+    @include flex (column, flex-end, none, none, none);
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    background-image: url("./../assets/img/herospace_index.webp");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    position: relative;
+    margin-top: 0;
+    z-index: 10;
+}
