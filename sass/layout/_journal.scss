@@ -1,0 +1,80 @@
+.journal-container {
+    @include grid (repeat(12, 1fr), repeat(12, 1fr), 1rem);
+    width: 100%;
+    height: 1328px;
+    padding: 0px 16px;
+    margin: 96px 0px;
+    grid-template-areas:
+        "title title title title title title title title . brand brand brand"
+        "title title title title title title title title . brand brand brand"
+        ". . . . . . . . . . . ."
+        ". . season season . . version version version version . ."
+        "subtitle subtitle . . tagline tagline collection collection collection collection . ."
+        "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+        "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+        "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+        "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
+        "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
+        "subtitle subtitle cta cta cta cta thumb thumb thumb thumb . ."
+        "subtitle subtitle . . . . . . . . . ."
+    ;
+}
+
+.title-journal {
+    @include flex (row, none, flex-end, none, none);
+    grid-area: title;
+}
+
+.brand-journal {
+    @include flex (row, flex-end, flex-end, none, none);
+    grid-area: brand;
+}
+
+.season-journal {
+    grid-area: season;
+}
+
+.version-journal {
+    grid-area: version;
+    line-height: 4.5rem;
+}
+
+.subtitle-journal {
+    @include flex (row, none, none, none, none);
+    grid-area: subtitle;
+    line-height: 4.5rem;
+    /** Rotation */
+    writing-mode: vertical-lr;
+}
+
+.tagline-journal {
+    grid-area: tagline;
+}
+
+.collection-journal {
+    grid-area: collection;
+}
+
+.journal-container img {
+    @include flex (row, center, center, none, none);
+    grid-area: thumb;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.text-journal {
+    @include flex (row, none, flex-end, none, none);
+    grid-area: btxt;
+}
+
+.cta-journal {
+    @include flex (row, none, flex-end, none, none);
+    grid-area: cta;
+    a {
+        display: inline-block;
+        color: #000000;
+        text-decoration: none;
+    }
+}

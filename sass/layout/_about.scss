@@ -1,0 +1,32 @@
+.about {
+    @include flex (column, none, none, 7.5rem, none);
+    width: 100%;
+    margin: 136px 0px 136px 0px;
+    h1 {
+        line-height: 11.5rem;
+        padding: 0px 16px;
+    }
+    div {
+        @include flex (row, center, center, 1rem, none);
+        width: 100%;
+        padding: 0px 16px;
+        img {
+            width: 40%;
+        }
+    }
+}
+
+.a-text {
+    width: calc(60% - 8px);
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+}
+
+.a-img {
+    width: calc(40% - 8px);
+}
+
+.a-quote {
+    text-align: center;
+}

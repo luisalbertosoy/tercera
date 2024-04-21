@@ -15,6 +15,16 @@
     left: 16px;
     bottom: 16px;
     z-index: 2;
+    .price-color-legal {
+        @include flex (column, none, none, none, none);
+        div {
+            @include flex (row, space-between, none, none, none);
+            padding-bottom: 8px;
+        }
+        .legal-d {
+            width: 100%;
+        }
+    }
 }
 
 .sp-gallery {
@@ -48,84 +58,63 @@
     }
     .select-container {
         @include flex (row, center, none, 1rem, wrap);
-    }
-}
-
-.price-color-legal {
-    @include flex (column, none, none, none, none);
-    div {
-        @include flex (row, space-between, none, none, none);
-        padding-bottom: 8px;
-    }
-    .legal-d {
-        width: 100%;
-    }
-}
-
-/**
-.add-module {
-    .select-container {
-        @include flex (row, center, none, 1rem, wrap);
-    }
-}**/
-
-.size {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: calc(50% - 8px);
-    height: 48px;
-    color: #000000;
-    background-color: #ffffff;
-    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-    background-repeat: no-repeat;
-    background-position-x: 90%;
-    background-position-y: center;
-    display: block;
-    padding: 0px 20px;
-    font-size: 1rem;
-    line-height: 1rem;
-    border: 2px solid #c5c5c5;
-    border-radius: 24px;
-    cursor: pointer;
-    transition: 0.3s;
-    &:focus {
-        border-color: #1D79FF;
-    }
-    &:hover {
-        border-color: #1D79FF;
-    }
-}
-
-.wish {
-    width: calc(50% - 8px);
-    height: 48px;
-    font-size: 1rem;
-    line-height: 1rem;
-    color: #000000;
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 24px;
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
-    cursor: pointer;
-    transition: 0.3s;
-    &:hover {
-        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
-    }
-}
-
-.add {
-    width: 100%;
-    height: 48px;
-    font-size: 1rem;
-    line-height: 1rem;
-    background-color: #1D79FF;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
-    cursor: pointer;
-    transition: 0.3s;
-    &:hover {
-        background-color: #ECE870;
+        .size {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: calc(50% - 8px);
+            height: 48px;
+            color: #000000;
+            background-color: #ffffff;
+            background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+            background-repeat: no-repeat;
+            background-position-x: 90%;
+            background-position-y: center;
+            display: block;
+            padding: 0px 20px;
+            font-size: 1rem;
+            line-height: 1rem;
+            border: 2px solid #c5c5c5;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:focus {
+                border-color: #1D79FF;
+            }
+            &:hover {
+                border-color: #1D79FF;
+            }
+        }
+        .wish {
+            width: calc(50% - 8px);
+            height: 48px;
+            font-size: 1rem;
+            line-height: 1rem;
+            color: #000000;
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            border-radius: 24px;
+            box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+            }
+        }
+        .add {
+            width: 100%;
+            height: 48px;
+            font-size: 1rem;
+            line-height: 1rem;
+            background-color: #1D79FF;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                background-color: #ECE870;
+            }
+        }
     }
 }
 
