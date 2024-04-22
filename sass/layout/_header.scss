@@ -16,7 +16,7 @@
         text-decoration: none;
         font-size: 1rem;
         line-height: 1.5rem;
-        color: black;
+        color: map-get($colors , BlackOut);
         border-bottom: 2px solid transparent;
     }
     .menu-toggle {
@@ -35,13 +35,13 @@
             border-bottom: 2px solid transparent;
             transition: 0.3s;
             &:hover {
-                border-bottom: 2px solid #000000;
+                border-bottom: 2px solid map-get($colors , BlackOut);
             }
             a {
                 text-decoration: none;
                 font-size: 1rem;
                 line-height: 1.5rem;
-                color: black;
+                color: map-get($colors , BlackOut);
             }
         }
     }

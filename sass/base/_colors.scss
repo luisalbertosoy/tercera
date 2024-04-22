@@ -1,9 +1,9 @@
 .bg-aphnblue {
-    background-color: #1D79FF;
+    background-color: map-get($colors , BlueAphn);
 }
 
 .bg-aphnyellow {
-    background-color: #ECE870;
+    background-color: map-get($colors , YellowAphn);
 }
 
 .bg-lime {
@@ -39,17 +39,17 @@
 }
 
 .clr-aphnblue {
-    color: #ECE870;
+    color: map-get($colors , BlueAphn);
 }
 
 .clr-aphnyellow {
-    color: #1D79FF;
+    color: map-get($colors , YellowAphn);
 }
 
 .clr-lightgray {
-    color: #F1F1F1;
+    color: map-get($colors , LightGrayAphn);
 }
 
 .clr-midgray {
-    color: #A1A1A1;
+    color: map-get($colors , MidGrayAphn);
 }

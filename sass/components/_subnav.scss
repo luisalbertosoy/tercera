@@ -18,13 +18,13 @@
             @include flex (row, none, center, .25rem, none);
             list-style: none;
             a {
-                color: #000;
+                color: map-get($colors , BlackOut);
                 font-size: 1rem;
                 line-height: 1.5rem;
                 text-decoration: none;
                 transition: 0.3s;
                 &:hover {
-                    color: #1D79FF;
+                    color: map-get($colors , BlueAphn);
                 }
             }
         }
@@ -34,6 +34,6 @@
 .submenu-active {
     width: 10px;
     height: 10px;
-    background-color: #1D79FF;
+    background-color: map-get($colors , BlueAphn);
     border-radius: 10px;
 }

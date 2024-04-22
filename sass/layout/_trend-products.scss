@@ -29,12 +29,12 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    color: #000000;
+    color: map-get($colors , BlackOut);
     text-decoration: none;
     line-height: 2rem;
     a {
         font-size: 1rem;
-        color: #000000;
+        color: map-get($colors , BlackOut);
         text-decoration: none;
         line-height: 1rem;
     }
