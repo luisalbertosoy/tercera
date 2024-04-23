@@ -1077,7 +1077,7 @@ input[type=submit] {
       color: #000000;
       border-bottom: 2px solid transparent; }
     .nav-container .menu-toggle:checked ~ .navbar {
-      height: calc(100vh - 4rem); }
+      height: 100vh; }
     .nav-container .menu-button {
       display: block;
       line-height: 1.5rem;
@@ -1184,6 +1184,10 @@ input[type=submit] {
     gap: 8px; }
   .trend-products {
     margin: 80px 0px; }
+    .trend-products .trend-info .season {
+      line-height: 2rem; }
+    .trend-products .trend-info .year {
+      line-height: 2rem; }
   .archive-container {
     height: 720px;
     grid-template-columns: repeat(4, 1fr);

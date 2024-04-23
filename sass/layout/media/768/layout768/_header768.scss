@@ -14,7 +14,7 @@
     }
     .menu-toggle {
         &:checked ~ .navbar {
-        height: calc(100vh - 4rem);
+        height: 100vh;
         }
     }
     .menu-button {
