@@ -1,0 +1,15 @@
+.product-listing {
+    margin: 80px 0px;
+}
+
+.pl-info {
+    @include flex (column, none, none, 1rem, none);
+    .pl-filters {
+        p {
+            font-size: .875rem;
+        }
+        a {
+            font-size: .875rem;
+        }
+    }
+}

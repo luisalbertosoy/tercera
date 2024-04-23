@@ -1,0 +1,93 @@
+.footer-index {
+    height: 700px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding: 24px 16px 48px 16px;
+    grid-template-areas:
+        "ten ten aphn aphn"
+        "menu1 menu1 aphn aphn"
+        "menu2 menu2 menu3 menu3"
+        "nslr nslr nslr nslr"
+        "copyr copyr copyr copyr"
+        "privacy privacy privacy privacy"
+    ;
+    img {
+        @include flex (row, flex-end, flex-start, none, none);
+        grid-area: aphn;
+    }
+}
+
+.ten {
+    grid-area: ten;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.quote {
+    display: none;
+}
+
+.menu-1 {
+    grid-area: menu1;
+}
+
+.menu-2 {
+    grid-area: menu2;
+}
+
+.menu-3 {
+    grid-area: menu3;
+}
+
+.menu-f {
+    li {
+        a {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        }
+    }
+}
+
+.newsletter-f {
+    width: 100%;
+    grid-area: nslr;
+    justify-content: flex-end;
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    div {
+        width: 100%;
+    }
+}
+
+input[type=text] {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+input[type=submit] {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.copyright {
+    grid-area: copyr;
+    justify-content: flex-start;  
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.privacy {
+    @include flex (row, flex-start, flex-start, none, none);
+    grid-area: privacy;
+    a {
+        font-size: 1rem;
+        line-height: 1rem, 
+    }
+}
+
+.footer-index, .f-msp {
+    padding-bottom: 32px;
+}

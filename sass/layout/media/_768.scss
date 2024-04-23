@@ -1,0 +1,22 @@
+/** @media max-width:768px **/
+
+@media (max-width:768px) {
+    /** @base768 **/
+    @import "./768/fonts768";
+    /** @components768 **/
+    @import "./768/components768/subnav768";
+    @import "./768/components768/menu-blured768";
+    @import "./768/components768/cards-cont768";
+    @import "./768/components768/cards768";
+    /** @layout768 **/
+    @import "./768/layout768/header768";
+    @import "./768/layout768/footer768";
+    @import "./768/layout768/herospace-index768";
+    @import "./768/layout768/trend-products768";
+    @import "./768/layout768/archive-index768";
+    @import "./768/layout768/tops768";
+    @import "./768/layout768/store768";
+    @import "./768/layout768/single-product768";
+    @import "./768/layout768/about768";
+    @import "./768/layout768/journal768";
+}

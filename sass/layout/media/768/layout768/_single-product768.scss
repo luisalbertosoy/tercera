@@ -1,0 +1,54 @@
+.herospace-product {
+    display: none;
+}
+
+.herospace-product-m {
+    @include flex (column, flex-end, none, none, none);
+    width: 100%;
+    height: calc(100vh - 56px);
+    background-color: map-get($colors , OffWhite);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 0;
+    z-index: 2;
+}
+
+.tech-info {
+    position: static;
+    order: 2;
+    padding: 16px 16px 0px 16px;
+}
+
+.sp-gallery {
+    outline: 1px solid map-get($colors , BlackOut);
+    img {
+        width: 100%;
+        height: calc(100vh - 56px);
+    }
+}
+
+.add-module {
+    width: calc(100% - 32px);
+    position: fixed;
+    div {
+        @include flex (column, none, none, none, none);
+    }
+    .select-container {
+        .wish {
+            box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.10);
+        }
+        .add {
+            color: map-get($colors , BlackOut)
+        }
+    }
+}
+
+.size-guide {
+    padding-bottom: 8px;
+    a {
+        color: map-get($colors , BlackOut);
+        text-decoration: none;
+        border-bottom: 2px solid map-get($colors , BlackOut);
+    }
+}

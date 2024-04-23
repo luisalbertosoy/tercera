@@ -1,0 +1,28 @@
+.about {
+    margin: 84px 0px 84px 0px;
+    gap: 64px;
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    div {
+        flex-wrap: wrap;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.a-text {
+    width: 100%;
+    padding: 0px;
+}
+
+.a-img {
+    width: 100%;
+}
+
+.a-quote {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}

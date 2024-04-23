@@ -17,9 +17,8 @@
 }
 
 .a-text {
+    @include flex (row, center, none, none, none);
     width: calc(60% - 8px);
-    display: flex;
-    justify-content: center;
     padding: 10%;
 }
 

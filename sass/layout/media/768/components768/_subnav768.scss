@@ -1,0 +1,7 @@
+.sub-container {
+    bottom: 24px;
+    ul {
+        backdrop-filter: blur(0.625rem);
+        -webkit-backdrop-filter: blur(8px);
+    }
+}

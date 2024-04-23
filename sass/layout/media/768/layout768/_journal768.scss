@@ -1,0 +1,65 @@
+.journal-container {
+    height: 760px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    padding: 0px 16px 16px 16px;
+    margin: 80px 0px;
+    grid-template-areas: "title title title title" ". season brand brand" "tagline tagline version version" ". . collection collection" "subtitle . thumb thumb" "subtitle . thumb thumb" "cta cta thumb thumb";
+}
+
+.brand-journal {
+    @include flex (row, flex-start, flex-end, none, none);
+    grid-area: brand;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.season-journal {
+    @include flex (row, none, flex-end, none, none);
+    grid-area: season;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.version-journal {
+    @include flex (row, none, flex-end, none, none);
+    grid-area: version;
+    font-size: 3.5rem;
+    line-height: 2.5rem;
+}
+
+.subtitle-journal {
+    grid-area: subtitle;
+    font-size: 3.5rem;
+    line-height: 2.5rem;
+}
+
+.tagline-journal {
+    @include flex (row, none, flex-end, none, none);
+    grid-area: tagline;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.collection-journal {
+    @include flex (row, none, flex-end, none, none);
+    grid-area: collection;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.journal-container img {
+    grid-area: thumb;
+}
+
+.text-journal {
+    display: none;
+}
+
+.cta-journal {
+    grid-area: cta;
+    a {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}

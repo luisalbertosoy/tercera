@@ -105,10 +105,8 @@ input[type=submit] {
 }
 
 .copyright {
+    @include flex (row, none, flex-end, none, none);
     grid-area: copyr;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
 }
 
 .privacy {

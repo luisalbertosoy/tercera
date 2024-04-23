@@ -1398,7 +1398,7 @@ input[type=submit] {
     }
     
     .subtitle-archive {
-
+        grid-area: subtitle;
         font-size: 3.5rem;
         line-height: 2.5rem;
         display:flex;
@@ -1802,7 +1802,7 @@ input[type=submit] {
     }
     
     .subtitle-journal {
-
+        
         font-size: 3.5rem;
         line-height: 2.5rem;
         display:flex;

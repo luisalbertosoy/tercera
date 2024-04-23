@@ -1,0 +1,64 @@
+.archive-container {
+    height: 720px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    padding: 0px 16px 16px 16px;
+    grid-template-areas:
+        "title title title title"
+        ". season brand brand"
+        "tagline tagline version version"
+        ". . collection collection"
+        "subtitle . thumb thumb"
+        "subtitle . thumb thumb"
+        "cta cta thumb thumb"
+    ;
+}
+.brand-archive {
+    @include flex (row, flex-start, flex-end, none, none);
+    grid-area: brand;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.season-archive {
+    @include flex (row, none, flex-end, none, none);
+    grid-area: season;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.version-archive {
+    @include flex (row, none, flex-end, none, none);
+    grid-area: version;
+    font-size: 3.5rem;
+    line-height: 2.5rem;
+}
+.subtitle-archive {
+    grid-area: subtitle;
+    font-size: 3.5rem;
+    line-height: 2.5rem;
+    /** Rotation **/
+}
+.tagline-archive {
+    @include flex (row, none, flex-end, none, none);
+    grid-area: tagline;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.collection-archive {
+    @include flex (row, none, flex-end, none, none);
+    grid-area: collection;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.archive-container img {
+    grid-area: thumb;
+}
+.text-archive {
+    display: none;
+}
+.cta-archive {
+    grid-area: cta;
+    a {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}

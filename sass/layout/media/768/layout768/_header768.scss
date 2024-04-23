@@ -1,0 +1,59 @@
+.header-index {
+    width: 100%;
+}
+
+.nav-container {
+    flex-wrap: wrap;
+    position: relative;
+    a {
+        text-decoration: none;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: map-get($colors , BlackOut);
+        border-bottom: 2px solid transparent;
+    }
+    .menu-toggle {
+        &:checked ~ .navbar {
+        height: calc(100vh - 4rem);
+        }
+    }
+    .menu-button {
+        display: block;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: black;
+        cursor: pointer;
+    }
+    .n2 {
+        order: 2;
+    }
+    .n3 {
+        order: 1;
+    }
+    .n4 {
+        order: 3;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    .navbar {
+        @include flex (column, center, none, none, none);
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background-color: map-get($colors , BlackOut);
+        position: absolute;
+        top: 44px;
+        left: 0px;
+        padding: 0px 16px;
+        transition: all .3s;
+        li {
+            a {
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+                color: map-get($colors , OffWhite);
+            }
+        }
+    }
+}
